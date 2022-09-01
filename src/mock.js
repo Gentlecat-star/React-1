@@ -1,11 +1,11 @@
-function getID() {
+function IdGenerator() {
     let id = 1;
     return function() {
         return id++;
     }
 }
 
-const idGenerator = getID();
+const getId = IdGenerator();
 
 export const product = {
   name: "3D принтер",
@@ -21,27 +21,27 @@ export const product = {
     "это «текст-рыба», часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной «рыбой» для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.",
   comments: [
       {
-          id: idGenerator(),
+          id: getId(),
           name: "Олег",
           text: "Мне понравилось!"
       },
       {
-          id: idGenerator(),
+          id: getId(),
           name: "Богданчик",
           text: "Мне не понравилось!"
       },
       {
-          id: idGenerator(),
+          id: getId(),
           name: "Далия Гиллеспи",
           text: "Отстой. На костёр."
       },
       {
-          id: idGenerator(),
+          id: getId(),
           name: "Машуля",
           text: "Товар очень качественный, купила бы 2, но мало места дома."
       },
       {
-          id: idGenerator(),
+          id: getId(),
           name: "Кингслэйер",
           text: "Мне понравилось. Особенно хорошо бить этой фигнёй по голове."
       }

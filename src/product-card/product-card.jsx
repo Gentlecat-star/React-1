@@ -1,14 +1,14 @@
 import React from "react";
-import Title from "./title";
-import Article from "./article";
-import Image from "./image";
-import TotalPrice from "./total-price";
-import Counter from "./counter";
-import Delivery from "./delivery";
-import Description from "./description";
-import Button from "./button";
-import Comments from "./comments";
-import TrustedProduct from "./trusted-product";
+import Title from "/src/title/title";
+import Article from "/src/article/article";
+import Image from "/src/image/image";
+import TotalPrice from "/src/total-price/total-price";
+import Counter from "/src/counter/counter";
+import Delivery from "/src/delivery/delivery";
+import Description from "/src/description/description";
+import Button from "/src/button/button";
+import Comments from "/src/comments/comments";
+import TrustedProduct from "/src/trusted-product/trusted-product";
 
 function ProductCard({ product }) {
   return (
